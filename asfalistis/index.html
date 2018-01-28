@@ -45,10 +45,6 @@
 			/* The image used */
 			background-image: url("cloud2.jpg");
 
-			/* Full height */
-			height: 90%;
-			width: 100%;
-
 			/* Center and scale the image nicely */
 			background-position: center;
 			background-repeat: repeat;
@@ -104,12 +100,12 @@
 		<div style="width:100%; text-align:center; padding:200px;" class="text-white"><div style="background-color:rgba(0, 0, 0, 0.4); border-radius: 15px; padding:20px;"><h1 style="font-size: 4em;">Ασφαλειες αυτοκινητου, οικιας και υγειας σε εξαιρετικες τιμες</h1></div></div>
 	</div>
 	
-	<div class="bg3">
-		<div style="padding:80px 100px;">
+	<div class="bg3" style="height: 105%; width: 100%;">
+		<div style="padding:70px 100px;">
 			<h1 style="color: #19421c; font-weight: bold; text-align: center;">Υπηρεσιες</h1>
 		</div>
 		
-		<div class="row " style="margin: 0 auto; padding:0px 100px; padding-bottom: 100px;">	
+		<div class="row " style="margin: 0 auto; padding:30px 100px; padding-bottom: 100px;">	
 			<div class="col-md-4" style="padding: 20px;">
 				<div class="text-center" style="padding: 20px;">
 					<span class="fa fa-car fa-5x" style="color: #19421c;"></span>
@@ -152,10 +148,19 @@
 	<div class="bg2">
 	</div>
 
-	<div class="bg3">
-		<img style="float: right; margin-right: 60px; margin-top: 60px;" width="auto" height="460" src="boy_flip.png"/>
-		<div style="padding:80px 100px;">
-			<h1 style="color: #19421c; font-weight: bold; text-align: center;">Βοηθεια</h1>
+	<div class="bg3" style="height: 90%; width: 100%;">
+		<div class="row">
+			<div class="col-md-9" style="padding:80px 100px; text-align:center;">
+				<h1 style="color: #19421c; font-weight: bold; text-align: center;">Βοηθεια</h1>
+				<div style="color: #19421c; font-size: 1.5em; padding: 10px 120px;">Χρησημοποιηστε τον εξυπνο βοηθο μας για αμεση βοηθεια σχετικα με τις ασφαλησεις σας η με νεα ασφαληστηκα σχεδια που σας ενδιαφερουν.</div>
+				<div class="text-center" style="padding: 20px;">
+					<button type="button" class="btn btn-primary" style="background-color: #19421c !important; border-color: #19421c !important;">Περισσοτερα</button>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<img style="margin-right: 80px; margin-top: 60px;" width="auto" height="460" src="boy_flip.png"/>
+			</div>
+		</div>
 		</div>
 		
 	</div>
@@ -172,7 +177,6 @@
 	  };
 	  firebase.initializeApp(config);
 	  
-	  var database = firebase.database();
 	</script>
 	
 	<script>

@@ -94,9 +94,12 @@
 			</div>
 		</div>
 		<div id="cake2" style="position:absolute; background-color: rgba(1,1,1,0.3); margin-top: -140px; border-radius: 15px; padding: 20px; z-index: 10;">
-			<div id="cake" style="padding:12px; text-align:center; color: white; font-size:2em;">Καλοσωρησατε στο αυτοματο ασφαληστη!</div>
+			<div id="cake" style="padding:12px; text-align:center; color: white; font-size:2em;">Καλοσωρησατε στο αυτοματο ασφαλιστη!</div>
 		</div>
 		
+		<div>
+			<img style="position:absolute; margin-left: 340px; margin-top: -240px;" width="auto" height="460" src="boy_flip.png"/>
+		</div>
 	</div>
 		
 		<script>
@@ -114,6 +117,8 @@
 		
 		<script>
 		
+		var userr;
+		
 		firebase.auth().onAuthStateChanged(function(user) {
 		  if (user) {
 			// User is signed in.
@@ -124,6 +129,8 @@
 			$("#register").hide();
 			$("#user").show();
 			$("#logout").show();
+			
+			userr = user.uid;
 		  } else {
 			// No user is signed in.
 		  }
@@ -151,7 +158,19 @@
 			});
 
 			function send() {
+			
 				var text = $("#input").val();
+			
+				var d = new Date();
+			
+				//var userr = firebase.auth().uid();
+			
+				firebase.database().ref('users/' + userr).set({
+					request: text,
+					timestamp: d.getTime()
+				});
+						
+				
 				$.ajax({
 					type: "POST",
 					url: baseUrl + "query?v=20150910",
@@ -174,6 +193,7 @@
 						if (speechs=="Σας ευχαριστούμε.") {
 							var myVar = setInterval(myTimer, 2*1000);
 						}
+						
 					},
 					error: function() {
 						console.log("error");

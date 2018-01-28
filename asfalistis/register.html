@@ -15,13 +15,6 @@
 
 	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 
-	<style>
-	.col-centered{
-		float: none;
-		margin: 0 auto;
-	}
-	</style>
-
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-faded">
@@ -61,7 +54,7 @@
 		<div class="row" style="padding-top:160px;">
 		</div>
 		<div class="row">
-		  <div class="col-md-3 col-centered">
+		  <div class="col-md-3" style="float: none; margin: 0 auto;">
 			<div class="form-group">
 				<label for="name">Ονομα:</label>
 				<input type="name" class="form-control" id="name">
@@ -110,6 +103,9 @@
 					username: name2,
 					email: email2
 				});*/
+				
+				
+				//userr = user.uid;
 				
 				//alert( "Going to home" );
 				console.log("register");
