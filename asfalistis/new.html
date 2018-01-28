@@ -165,9 +165,8 @@
 			
 				//var userr = firebase.auth().uid();
 			
-				firebase.database().ref('users/' + userr).set({
-					request: text,
-					timestamp: d.getTime()
+				firebase.database().ref('users/' + userr + '/' + d.getTime() + '/').set({
+					request: text
 				});
 						
 				
