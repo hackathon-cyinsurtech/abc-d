@@ -26,7 +26,7 @@
 		<style>
 		.bg { 
 			/* The image used */
-			background-image: url("city_tran.png");
+			background-image: url("city_tran2.jpg");
 
 			/* Full height */
 			width: 100%; 
@@ -36,6 +36,12 @@
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
+		}
+		
+		.tagg:hover {
+			transform: translateX(-25%) translateY(-25%);
+			-webkit-transform: scale(1.02,1.02);
+			-webkit-transition: all 0.15s ease-in-out;
 		}
 
 	</style>
@@ -87,8 +93,8 @@
 				</button>
 			</div>
 		</div>
-		<div id="cake2" style="display: none; position:absolute; background-color: rgba(1,1,1,0.1); margin-top: -120px; border-radius: 15px; padding: 20px; z-index: 10;">
-			<div id="cake" style="padding:12px; text-align:center; color: white; font-size:2em;">Not Available</div>
+		<div id="cake2" style="position:absolute; background-color: rgba(1,1,1,0.3); margin-top: -140px; border-radius: 15px; padding: 20px; z-index: 10;">
+			<div id="cake" style="padding:12px; text-align:center; color: white; font-size:2em;">Καλοσωρησατε στο αυτοματο ασφαληστη!</div>
 		</div>
 		
 	</div>
@@ -182,11 +188,11 @@
 			
 			addDialog(160, -150, "Ασφαληση Αυτοκινητου", "scale(-1, -1)");
 			addDialog(150, 170, "Ασφαληση Υγειας", "scale(1, -1)");
-			addDialog(-140, 150, "Ασφαληση Οικιας", "scale(1, 1)");
+			addDialog(140, -360, "Ασφαληση Οικιας", "scale(-1, -1)");
 			
 			function addDialog(positionX, positionY, dialogText, scaleText){
 				
-				var ss1 = "<a class=\"tagg\" href=\"#\"><div style=\"position:absolute; margin: "+positionX+" 0 0 "+positionY+"; \"><div style=\"position: relative; display: flex; align-items: center;\"><img style=\"position: absolute; transform: "+scaleText+";\" width=\"130\" height=\"130\" src=\"dialog.png\"/><div style=\"position: absolute; font-weight: bold; color: #4e5562; width: 130px; text-align: center;\">"+dialogText+"</div></div></div></a>";
+				var ss1 = "<a class=\"tagg\" href=\"#\"><div style=\"position:absolute; margin: "+positionX+" 0 0 "+positionY+"; \"><div style=\"position: relative; display: flex; align-items: center;\"><img style=\"position: absolute; transform: "+scaleText+";\" width=\"130\" height=\"130\" src=\"dialog2.png\"/><div style=\"position: absolute; font-weight: bold; color: #4e5562; width: 130px; text-align: center;\">"+dialogText+"</div></div></div></a>";
 			
 				$( "#helll" ).append(ss1);
 			}
