@@ -16,10 +16,37 @@
 	<style>
 		.bg { 
 			/* The image used */
-			background-image: url("city.jpg");
+			background-image: url("city_up.jpg");
 
 			/* Full height */
-			height: 100%; 
+			width: 100%; 
+
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+		.bg2 { 
+			/* The image used */
+			background-image: url("city_down.jpg");
+
+			/* Full height */
+			width: 100%; 
+			height: 260px;
+			
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+		.bg3 { 
+			/* The image used */
+			background-image: url("city_tran.png");
+
+			/* Full height */
+			height: 100%;
 
 			/* Center and scale the image nicely */
 			background-position: center;
@@ -70,57 +97,64 @@
 </nav>
 
 <body>
-	
+
 	<div class="bg">
 		<div style="width:100%; text-align:center; padding:200px;" class="text-white"><div style="background-color:rgba(0, 0, 0, 0.4); border-radius: 15px; padding:20px;"><h1 style="font-size: 4em;">Ασφαλειες αυτοκινητου, οικιας και υγειας σε εξαιρετικες τιμες</h1></div></div>
 	</div>
 	
-	<div style="padding:80px 100px;">
-		<h1 style="color: #279934; font-weight: bold; text-align: center;">Υπηρεσιες</h1>
+	<div class="bg3">
+		<div style="padding:80px 100px;">
+			<h1 style="color: #19421c; font-weight: bold; text-align: center;">Υπηρεσιες</h1>
+		</div>
+		
+		<div class="row " style="margin: 0 auto; padding:0px 100px; padding-bottom: 100px;">	
+			<div class="col-md-4" style="padding: 20px;">
+				<div class="text-center" style="padding: 20px;">
+					<span class="fa fa-car fa-5x" style="color: #19421c;"></span>
+				</div>
+				<div style="padding: 20px; text-align:center;">
+					<h4 style="color: #19421c;">Ασφαλεια Οχηματων</h4>
+					<span style="color: #19421c;">Ασφαληση οχηματων με εξαιρετικη εξυπηρετηση και αμεση οδικη βοηθεια</span>
+				</div>
+				<div class="text-center" style="padding: 20px;">
+					<button type="button" class="btn btn-primary" style="background-color: #19421c !important; border-color: #19421c !important;">Περισσοτερα</button>
+				</div>
+			</div>
+			<div class="col-md-4" style="margin: 0 auto; padding: 20px;">
+				<div class="text-center" style="padding: 20px;">
+					<span class="fa fa-home fa-5x" style="color: #19421c;"></span>
+				</div>
+				<div style="padding: 20px; text-align:center;">
+					<h4 style="color: #19421c;">Ασφαλεια Οικιας</h4>
+					<span style="color: #19421c;">Αμεση ασφαληση οικειας για φυσικες καταστροφες και κλοπες</span>
+				</div>
+				<div class="text-center" style="padding: 20px;">
+					<button type="button" class="btn btn-primary" onclick="'window.location.href='new.html'" style="background-color: #19421c !important; border-color: #19421c !important;">Περισσοτερα</button>
+				</div>
+			</div>
+			<div class="col-md-4" style="margin: 0 auto;  padding: 20px;">
+				<div class="text-center" style="padding: 20px;">
+					<span class="fa fa-plus-square fa-5x" style="color: #19421c;"></span>
+				</div>
+				<div style="padding: 20px; text-align:center;">
+					<h4 style="color: #19421c;">Ασφαλεια Υγειας</h4>
+					<span style="color: #19421c;">Ασφαλειες υγειας και ζωης αμεσα και οικονομικα</span>
+				</div>
+				<div class="text-center" style="padding: 20px;">
+					<button type="button" class="btn btn-primary" style="background-color: #19421c !important; border-color: #19421c !important;">Περισσοτερα</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	
-	<div class="row" style="margin: 0 auto; padding:0px 100px;">	
-		<div class="col-md-4" style="padding: 20px;">
-			<div class="text-center" style="padding: 20px;">
-				<span class="fa fa-car fa-5x" style="color: #279934;"></span>
-			</div>
-			<div style="padding: 20px; text-align:center;">
-				<h4 style="color: #279934;">Ασφαλια Αυτοκινητου</h4>
-			</div>
-			<div class="text-center" style="padding: 20px;">
-				<button type="button" class="btn btn-primary">Περισσοτερα</button>
-			</div>
-		</div>
-		<div class="col-md-4" style="margin: 0 auto; padding: 20px;">
-			<div class="text-center" style="padding: 20px;">
-				<span class="fa fa-home fa-5x" style="color: #279934;"></span>
-			</div>
-			<div style="padding: 20px; text-align:center;">
-				<h4 style="color: #279934;">Ασφαλεια Οικιας</h4>
-				<span style="color: #279934;">ασδδσ</span>
-			</div>
-			<div class="text-center" style="padding: 20px;">
-				<button type="button" class="btn btn-primary" onclick="window.location.href='new.html'">Περισσοτερα</button>
-			</div>
-		</div>
-		<div class="col-md-4" style="margin: 0 auto;  padding: 20px;">
-			<div class="text-center" style="padding: 20px;">
-				<span class="fa fa-plus-square fa-5x" style="color: #279934;"></span>
-			</div>
-			<div style="padding: 20px; text-align:center;">
-				<h4 style="color: #279934;">Ασφαλεια Υγειας</h4>
-			</div>
-			<div class="text-center" style="padding: 20px;">
-				<button type="button" class="btn btn-primary">Περισσοτερα</button>
-			</div>
-		</div>
-	</div>
-	
-	<div style="width:100%; height:500px;">
-		<img style="position:absolute; margin: 30 0 0 30;" width="100" height="100" src="city.jpg"/>
-		<img style="position:absolute; margin: 120 0 0 70;" width="100" height="100" src="city.jpg"/>
+	<div class="bg2">
 	</div>
 
+	<div class="bg3">
+		<div style="padding:80px 100px;">
+			<h1 style="color: #19421c; font-weight: bold; text-align: center;">Βοηθεια</h1>
+		</div>
+	</div>
 	
 	<script>
 	  // Initialize Firebase
